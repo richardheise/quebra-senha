@@ -14,7 +14,7 @@ def get_salt_and_hash(entrada):
 
 # Função para buscar no dicionário
 def busca_dicio(salt, hashIn):
-    with open("dicionario_completo.txt", "r") as dicio:
+    with open("../dictionaries/dicionario_completo.txt", "r") as dicio:
         for linha in dicio:
             # Remover espaços em branco no início e no final da linha
             stripped_line = linha.strip()
@@ -26,7 +26,7 @@ def busca_dicio(salt, hashIn):
 
 # Função para buscar em banco de senhas
 def busca_passwords(salt, hashIn):
-    with open("1MillionPasswords.txt", "r") as dicio:
+    with open("../dictionaries/1MillionPasswords.txt", "r") as dicio:
         for linha in dicio:
             # Remover espaços em branco no início e no final da linha
             stripped_line = linha.strip()

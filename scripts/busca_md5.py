@@ -8,7 +8,7 @@ tempo_dicio = tempo_banco = tempo_brute = 0
 
 # Função para buscar no dicionário
 def busca_dicio():
-    with open("dicionario_completo.txt", "r") as dicio:
+    with open("../dictionaries/dicionario_completo.txt", "r") as dicio:
         for linha in dicio:
             # Remover espaços em branco no início e no final da linha
             stripped_line = linha.strip()
@@ -22,7 +22,7 @@ def busca_dicio():
 
 # Função para buscar em banco de senhas
 def busca_passwords():
-    with open("1MillionPasswords.txt", "r") as dicio:
+    with open("../dictionaries/1MillionPasswords.txt", "r") as dicio:
         for linha in dicio:
             # Remover espaços em branco no início e no final da linha
             stripped_line = linha.strip()
